@@ -1,0 +1,51 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "SF_CLIENT_ID": {
+      "required": true
+    },
+    "SF_CLIENT_SECRET": {
+      "required": true
+    },
+    "SF_LOGIN_URL": {
+      "required": true
+    },
+    "SF_PASSWORD": {
+      "required": true
+    },
+    "SF_USER_NAME": {
+      "required": true
+    },
+    "SLACK_ACCOUNT_TOKEN": {
+      "required": true
+    },
+    "SLACK_CASE_TOKEN": {
+      "required": true
+    },
+    "SLACK_CONTACT_TOKEN": {
+      "required": true
+    },
+    "SLACK_OPPORTUNITY_TOKEN": {
+      "required": true
+    },
+    "SLACK_WHOAMI_TOKEN": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "slacksync",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
